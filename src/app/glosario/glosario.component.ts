@@ -110,7 +110,6 @@ export class GlosarioComponent implements OnInit {
       this.levels = this.levels.concat(currentPageLevels);
 
       if (response.pageable.nextPage) {
-        console.log("LEVELS", this.levels)
         this.fetchLevels(response.pageable.nextPage);
       } else {
         console.log("Levels", this.levels);

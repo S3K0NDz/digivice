@@ -49,13 +49,11 @@ export class DigimonListComponent implements OnInit {
     // Obtiene y carga los atributos desde el servicio
     this.digimonService.getAttributes().subscribe(attributes => {
       this.attributes = attributes;
-      console.log(this.attributes);
     });
 
     // Obtiene y carga los niveles desde el servicio
     this.digimonService.getLevels().subscribe(levels => {
       this.levels = levels;
-      console.log(this.levels);
     });
   }
 
@@ -69,7 +67,6 @@ export class DigimonListComponent implements OnInit {
         (data: any) => {
           this.dataSource.data = data.content;
           this.dataSource.paginator = this.paginator;
-          console.log(this.dataSource.data);
         },
         error => {
           console.error('Error fetching digimons:', error);

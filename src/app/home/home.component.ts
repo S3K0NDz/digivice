@@ -47,7 +47,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.digimonapiService.getDigimon(digimonNumber).subscribe(
       (data) => {
         this.digimonData = data;
-        console.log(this.digimonData);
       },
       (error) => {
         console.error('Error fetching digimon data:', error);
