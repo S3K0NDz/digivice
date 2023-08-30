@@ -42,3 +42,29 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 <img src="http://drive.google.com/uc?export=view&id=1aT15B_kZBxru7eUBTraeV4xK8XPa6rXx">
 
+## Tabla
+
+<img src="http://drive.google.com/uc?export=view&id=1zJ_fMsGDV2DXtedBGmdtASvOGx3p6EHY">
+
+
+<img src="http://drive.google.com/uc?export=view&id=1u2SZe99AfVdpaWcvCZauzz6zo7gqx6IL">
+
+
+
+<img src="http://drive.google.com/uc?export=view&id=1p4oF1eBZdxX374L8YlZqPz5VODX46jik">
+<img src="http://drive.google.com/uc?export=view&id=1fMMYRvjD3tJVrZWemyhsTSVhNIfp_E1w">
+<img src="http://drive.google.com/uc?export=view&id=1ZgD1MDJY4rx3dPDZKw458cywHq_yphHb">
+
+
+## Detalles
+<img src="http://drive.google.com/uc?export=view&id=1HdHeMQg6CEpVafG-GwoOGERjFawFq2JE">
+<img src="http://drive.google.com/uc?export=view&id=1KZZ8bUM7ek9yQSGTclG3GLjSu56n6wMi">
+<img src="http://drive.google.com/uc?export=view&id=1Vf9QyOtEjuIr2_JAxw7MkD0B6m9_46O8">
+<img src="http://drive.google.com/uc?export=view&id=1Y8ahvs3Yz_5-NN1pDQNmF7VmizGslrSN">
+
+## Glosario
+
+<img src="http://drive.google.com/uc?export=view&id=1Y8ahvs3Yz_5-NN1pDQNmF7VmizGslrSN">
+<img src="http://drive.google.com/uc?export=view&id=1na2ML3FXdu4Ur_I46IISylgPuFYRFx5c">
+<img src="http://drive.google.com/uc?export=view&id=1O6nDfocBLM64MKhjmzYCWeoi_uugve5s">
+
