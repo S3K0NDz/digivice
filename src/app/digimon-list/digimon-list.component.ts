@@ -3,8 +3,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { HttpClient } from '@angular/common/http';
-
 
 @Component({
   selector: 'app-digimon-list',
@@ -22,12 +20,9 @@ export class DigimonListComponent implements OnInit {
   levels: any[] | undefined;
 
   totalElements: number | undefined;
- 
-
 
   @ViewChild(MatPaginator, { static: true })
   paginator!: MatPaginator;
-
 
   constructor(
     private digimonService: DigimonapiService,
@@ -36,9 +31,7 @@ export class DigimonListComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    
-   
-    console.log( this.totalElements);
+    // Observa los cambios en los parámetros de la URL y carga los digimons según los filtros
     this.route.queryParams.subscribe(params => {
       this.nameFilter = params['name'] || '';
       this.attributeFilter = params['attribute'] || '';
@@ -53,24 +46,23 @@ export class DigimonListComponent implements OnInit {
       this.loadDigimons(this.nameFilter, this.attributeFilter, this.levelFilter);
     });
 
+    // Obtiene y carga los atributos desde el servicio
     this.digimonService.getAttributes().subscribe(attributes => {
       this.attributes = attributes;
       console.log(this.attributes);
     });
 
+    // Obtiene y carga los niveles desde el servicio
     this.digimonService.getLevels().subscribe(levels => {
       this.levels = levels;
       console.log(this.levels);
     });
-    
   }
 
-
+  // Carga los digimons basados en los filtros y la paginación
   loadDigimons(name?: string, attribute?: string, level?: string) {
-    
-    const pageSize = 9999;
+    const pageSize = 9999; // Cantidad grande para cargar todos los elementos
     const page = 0;
-
 
     this.digimonService.getDigimonList(pageSize, page, name, attribute, level)
       .subscribe(
@@ -85,9 +77,9 @@ export class DigimonListComponent implements OnInit {
       );
   }
 
+  // Aplica los filtros y actualiza la URL con los parámetros
   applyFilters() {
     this.loadDigimons(this.nameFilter, this.attributeFilter, this.levelFilter);
-
 
     this.router.navigate([], {
       relativeTo: this.route,
@@ -103,6 +95,7 @@ export class DigimonListComponent implements OnInit {
     });
   }
 
+  // Navega a la página de detalles de un digimon
   async irDetalles(id: number) {
     this.applyFilters();
 
@@ -113,7 +106,7 @@ export class DigimonListComponent implements OnInit {
     this.router.navigate(['/digimon-details', id]);
   }
 
-
+  // Restablece los filtros y la paginación
   resetFilters() {
     this.nameFilter = '';
     this.attributeFilter = '';
@@ -137,16 +130,4 @@ export class DigimonListComponent implements OnInit {
       replaceUrl: true
     });
   }
-
-
-
-
- 
-  
-  
-
-
-
-
-
 }
