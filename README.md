@@ -36,5 +36,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - Filtrado y paginación: Permite filtrar digimons por nombre, atributo y nivel, y ofrece paginación de los resultados.
 - Glosario: Proporciona información detallada sobre niveles, atributos y campos de los digimons.
 
-## Navegación
+
+# Navegación
+## Home
+
+<img src="http://drive.google.com/uc?export=view&id=1aT15B_kZBxru7eUBTraeV4xK8XPa6rXx">
 
