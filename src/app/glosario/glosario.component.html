@@ -1,0 +1,41 @@
+<div class="container">
+  
+  <div class="category">
+    <h1>Niveles</h1>
+    <p>{{ descriptionLevels }}</p>
+    <div class="cards">
+      <div class="card" *ngFor="let level of levels">
+        <h2>{{ level.name }}</h2>
+        <p>{{ level.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="category">
+    <h1>Atributos</h1>
+    <p>{{ descriptionAttributes }}</p>
+    <div class="cards">
+      <div class="card" *ngFor="let attribute of attributes">
+        <h2>{{ attribute.name }}</h2>
+        <p>{{ attribute.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="category">
+    <h1>Campos</h1>
+    <p>{{ descriptionFields }}</p>
+    <div class="cards">
+      <div class="card" *ngFor="let field of fields">
+        <h2>{{ field.name }}</h2>
+        <p>{{ field.description }}</p>
+        <img class="field-image" [src]="field.href">
+      </div>
+    </div>
+  </div>
+
+</div>

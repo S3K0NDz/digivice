@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="centrar">
+    <img class="card-img-top" src="{{ digimonDetails.images[0].href }}" alt="Card image cap">
+  </div>
+  <div class="card-details">
+    <h5 class="card-title">{{ digimonDetails.name }}</h5>
+    <p class="card-description">{{ getEnglishDescription(digimonDetails.descriptions) }}</p>
+
+    <hr>
+
+    <div class="card-section">
+      <h6>Tipos:</h6>
+      <div class="cards">
+        <div class="card" *ngFor="let type of digimonDetails.types">
+          <h2>{{ type.type }}</h2>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="card-section">
+      <h6>Atributos:</h6>
+      <div class="cards">
+        <div class="card" *ngFor="let attribute of digimonDetails.attributes">
+          <h2>{{ attribute.attribute }}</h2>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="card-section">
+      <h6>Habilidades:</h6>
+      <div class="cards">
+        <div class="card" *ngFor="let skill of digimonDetails.skills">
+          <h2>{{ skill.skill }}</h2>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="card-section">
+      <h6>Habilidades:</h6>
+      <div class="cards">
+        <div class="card" *ngFor="let field of digimonDetails.fields">
+          <h2>{{ field.field }}</h2>
+          <img class="card-img-field" src="{{ field.image }}" alt="Card image cap">
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="card-section">
+      <h6>Evoluciones anteriores:</h6>
+      <div class="cards">
+        <div class="card" *ngFor="let priorEvolution of digimonDetails.priorEvolutions">
+          <h2>{{ priorEvolution.digimon }}</h2>
+          <img class="card-img-top" src="{{ priorEvolution.image }}" alt="Card image cap">
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="card-section">
+      <h6>Evoluciones Posteriores:</h6>
+      <div class="cards">
+        <div class="card" *ngFor="let nextEvolution of digimonDetails.nextEvolutions">
+          <h2>{{ nextEvolution.digimon }}</h2>
+          <img class="card-img-top" src="{{ nextEvolution.image }}" alt="Card image cap">
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="card-button">
+      <button mat-raised-button color="primary" (click)="goBack()">Volver</button>
+    </div>
+  </div>
+</div>

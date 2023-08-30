@@ -1,0 +1,27 @@
+<div class="container" *ngIf="digimonData">
+  <div class="centrar">
+    <img class="card-img-top" src="{{ digimonData.images[0].href }}" alt="Card image cap"
+      (click)="digimonDetail(digimonData.id)">
+  </div>
+  <div class="card-details">
+    <h5 class="card-title">{{ digimonData.name }}</h5>
+
+    <div class="card-section">
+      <h6>Tipos:</h6>
+      <div class="cards">
+        <div class="card" *ngFor="let type of digimonData.types">
+          <h2>{{ type.type }}</h2>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="card-section">
+      <h6>Atributos:</h6>
+      <div class="cards">
+        <div class="card" *ngFor="let attribute of digimonData.attributes">
+          <h2>{{ attribute.attribute }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
