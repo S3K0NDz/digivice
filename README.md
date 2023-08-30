@@ -1,6 +1,6 @@
 # Digiviceapp
 
-Este proyecto es una aplicación web desarrollada en Angular que utiliza una API para mostrar información sobre digimons, incluyendo detalles, atributos y niveles.
+Este proyecto es una aplicación web desarrollada en Angular que utiliza una API (https://digimon-api.com/) para mostrar información sobre digimons, incluyendo detalles, atributos y niveles.
 
 ## Características
 
