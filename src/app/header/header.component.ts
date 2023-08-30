@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -7,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+
+  constructor(private router: Router) { }
+
+ // Función para navegar a los detalles de un digimon
+ digimonList() {
+  this.router.navigate(['/digimon-list']);
+}
+  
 
 }
