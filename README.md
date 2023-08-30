@@ -40,16 +40,22 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Navegación
 ## Home
 
+En la pantalla principal, se presenta una tarjeta con un Digimon que se renueva cada 15 segundos. En esta tarjeta, se exhiben sus tipos y atributos junto con una imagen representativa. Si deseamos explorar información más exhaustiva sobre dicho Digimon, simplemente tenemos que hacer clic en la tarjeta para acceder a detalles más profundos y completos.
+
 <img src="http://drive.google.com/uc?export=view&id=1aT15B_kZBxru7eUBTraeV4xK8XPa6rXx">
 
 ## Tabla
 
+Dentro de la tabla de Digimons, se despliega un completo listado que abarca la totalidad de los Digimon actualmente existentes.
+
 <img src="http://drive.google.com/uc?export=view&id=1zJ_fMsGDV2DXtedBGmdtASvOGx3p6EHY">
 
 
+Tenemos la capacidad de emplear múltiples filtros para buscar el Digimon que deseamos. En esta función, encontramos un campo destinado al nombre, otro para los atributos y uno más para el nivel del Digimon.
+
 <img src="http://drive.google.com/uc?export=view&id=1u2SZe99AfVdpaWcvCZauzz6zo7gqx6IL">
 
-
+Adicionalmente, disponemos de un sistema de paginación que nos brinda la posibilidad de aplicar filtros para visualizar conjuntos de resultados en grupos de 10, 25, 50 o 100 por página.
 
 <img src="http://drive.google.com/uc?export=view&id=1p4oF1eBZdxX374L8YlZqPz5VODX46jik">
 <img src="http://drive.google.com/uc?export=view&id=1fMMYRvjD3tJVrZWemyhsTSVhNIfp_E1w">
@@ -57,12 +63,21 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## Detalles
+
+Dentro de la ficha de detalles del Digimon, es posible acceder a información detallada como su descripción, tipos, atributos, habilidades, así como las evoluciones previas y posteriores.
 <img src="http://drive.google.com/uc?export=view&id=1HdHeMQg6CEpVafG-GwoOGERjFawFq2JE">
 <img src="http://drive.google.com/uc?export=view&id=1KZZ8bUM7ek9yQSGTclG3GLjSu56n6wMi">
 <img src="http://drive.google.com/uc?export=view&id=1Vf9QyOtEjuIr2_JAxw7MkD0B6m9_46O8">
+
+Si deseamos retornar a la pantalla anterior, contamos con un botón de "regresar". Al volver, los filtros que hayamos aplicado así como la configuración de paginación se conservarán intactos.
+
 <img src="http://drive.google.com/uc?export=view&id=1Y8ahvs3Yz_5-NN1pDQNmF7VmizGslrSN">
 
+
+
 ## Glosario
+
+Finalmente, disponemos de un glosario que organiza la información en tres secciones distintas: Nivel, Atributos y Campos.
 
 <img src="http://drive.google.com/uc?export=view&id=1aypFnzDGqzoeOyuBWR_lXixxlRrNnhYz">
 <img src="http://drive.google.com/uc?export=view&id=1na2ML3FXdu4Ur_I46IISylgPuFYRFx5c">

@@ -57,7 +57,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   // Inicia el intervalo para obtener y mostrar digimons aleatorios
   private startInterval(): void {
-    const source = interval(3000); // Crea un intervalo de 3 segundos
+    const source = interval(15000); // Crea un intervalo de 15 segundos
     this.subscription = source.pipe(
       takeWhile(() => this.alive) // Continúa mientras 'alive' sea verdadero
     ).subscribe(() => {
