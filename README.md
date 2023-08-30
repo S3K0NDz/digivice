@@ -64,7 +64,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Glosario
 
-<img src="http://drive.google.com/uc?export=view&id=1Y8ahvs3Yz_5-NN1pDQNmF7VmizGslrSN">
+<img src="http://drive.google.com/uc?export=view&id=1aypFnzDGqzoeOyuBWR_lXixxlRrNnhYz">
 <img src="http://drive.google.com/uc?export=view&id=1na2ML3FXdu4Ur_I46IISylgPuFYRFx5c">
 <img src="http://drive.google.com/uc?export=view&id=1O6nDfocBLM64MKhjmzYCWeoi_uugve5s">
 
